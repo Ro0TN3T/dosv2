@@ -8,3 +8,33 @@ LAYER7 BAYPASS CloudFlare js
 
 Requirements
 ------------
+
+    Git
+    Node.Js
+
+
+Usage
+-----
+
+    $ git clone https://github.com/Ro0TN3T/dosv2
+    $ cd dos
+    $ apt install nodejs -y
+    $ unzip node_modules
+    $ node tls.js https://target.com 60 1
+
+
+Updating
+--------
+
+    # tls.js
+    # cf.js BAYPASS CloudFlare
+    
+
+
+Contact
+-------
+
+Telegram Group : [Aceh Cyber Team]
+
+
+[ACT]: https://t.me/AcehCyberTeam/
