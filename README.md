@@ -23,6 +23,17 @@ Usage
     $ node tls.js https://target.com 60 1
 
 
+
+    TEXMUX
+-----
+
+    $ git clone https://github.com/Ro0TN3T/dosv2
+    $ cd dosv2
+    $ pkg install nodejs -y
+    $ unzip node_modules.zip
+    $ node tls.js https://target.com 60 1
+
+
 Updating
 --------
 
