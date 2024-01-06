@@ -13,7 +13,7 @@ Requirements
     Node.Js
 
 
-Usage
+Usage LINUX OR UNBUTU
 -----
 
     $ git clone https://github.com/Ro0TN3T/dosv2
@@ -24,9 +24,9 @@ Usage
 
 
 
-    TEXMUX
+   
 -----
-
+TERMUX
     $ git clone https://github.com/Ro0TN3T/dosv2
     $ cd dosv2
     $ pkg install nodejs -y
