@@ -107,12 +107,12 @@ const net = require("net");
  }
 
  const Socker = new NetSocket(); // Socket GET Fixed
- headers[":method"] = "GET","POST";
+ headers[":method"] = "POST";
  headers[":path"] = parsedTarget.path;
  headers[":scheme"] = "https";
  headers["accept"] = "/";
  headers["accept-language"] = "en-US,en;q=0.9";
- headers["accept-encoding"] = "gzip, deflate";
+ headers["accept-encoding"] = "gzip, deflate, br";
  headers["cache-control"] = "no-cache";
  headers["upgrade-insecure-requests"] = "1"; 
  
