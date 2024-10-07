@@ -13,7 +13,7 @@ Requirements
     Node.Js
 
 
-Usage LINUX OR Ubuntu
+Usage LINUX
 -----
 
     $ git clone https://github.com/Ro0TN3T/dosv2
